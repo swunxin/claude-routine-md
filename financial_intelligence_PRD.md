@@ -299,10 +299,12 @@
 
 ### 5.1 报告结构
 
+> **日期与时区规则（强制）：** 报告标题日期、报告生成时间、以及归档文件名 `daily/YYYY-MM-DD.md` 中的 `YYYY-MM-DD`，**一律取北京时间（UTC+8）当日**。即使 routine 运行环境时钟为 UTC，也必须换算为北京时间后再命名，避免跨零点出现差一天。
+
 ```markdown
 # 📊 财经情报与策略分析报告（QDII 视角）
 > 时间窗口：YYYY-MM-DD HH:MM ~ YYYY-MM-DD HH:MM UTC
-> 报告生成时间：YYYY-MM-DD HH:MM 时区
+> 报告生成时间：YYYY-MM-DD HH:MM（北京时间 UTC+8）
 
 ---
 
